@@ -11,9 +11,12 @@
 		B59D76C9256F6B4300B1389F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59D76C8256F6B4300B1389F /* ViewController.m */; };
 		B59D76CE256F6B4400B1389F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59D76CD256F6B4400B1389F /* Assets.xcassets */; };
 		B59D76D4256F6B4400B1389F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B59D76D3256F6B4400B1389F /* main.m */; };
+		EDC156D8658E9A6C900DD3D1 /* Pods_Demo002.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24B689CB6AADDEAE56FD116 /* Pods_Demo002.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		131CB09E595C7767F51283EE /* Pods-Demo002.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo002.release.xcconfig"; path = "Target Support Files/Pods-Demo002/Pods-Demo002.release.xcconfig"; sourceTree = "<group>"; };
+		3378094713481F369C294396 /* Pods-Demo002.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo002.debug.xcconfig"; path = "Target Support Files/Pods-Demo002/Pods-Demo002.debug.xcconfig"; sourceTree = "<group>"; };
 		B59D76BE256F6B4300B1389F /* Demo002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo002.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59D76C1256F6B4300B1389F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B59D76C2256F6B4300B1389F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		B59D76CD256F6B4400B1389F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B59D76D2256F6B4400B1389F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B59D76D3256F6B4400B1389F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D24B689CB6AADDEAE56FD116 /* Pods_Demo002.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo002.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC156D8658E9A6C900DD3D1 /* Pods_Demo002.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88525418A7AF15A2F5A05240 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3378094713481F369C294396 /* Pods-Demo002.debug.xcconfig */,
+				131CB09E595C7767F51283EE /* Pods-Demo002.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B59D76B5256F6B4300B1389F = {
 			isa = PBXGroup;
 			children = (
 				B59D76C0256F6B4300B1389F /* Demo002 */,
 				B59D76BF256F6B4300B1389F /* Products */,
+				88525418A7AF15A2F5A05240 /* Pods */,
+				C7B02E93567430D1AD7A1E1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +82,14 @@
 			path = Demo002;
 			sourceTree = "<group>";
 		};
+		C7B02E93567430D1AD7A1E1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D24B689CB6AADDEAE56FD116 /* Pods_Demo002.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -72,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B59D76D7256F6B4400B1389F /* Build configuration list for PBXNativeTarget "Demo002" */;
 			buildPhases = (
+				EBDBFEA0B9BF0AD7A5045B63 /* [CP] Check Pods Manifest.lock */,
 				B59D76BA256F6B4300B1389F /* Sources */,
 				B59D76BB256F6B4300B1389F /* Frameworks */,
 				B59D76BC256F6B4300B1389F /* Resources */,
@@ -126,6 +152,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EBDBFEA0B9BF0AD7A5045B63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo002-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B59D76BA256F6B4300B1389F /* Sources */ = {
@@ -255,6 +306,7 @@
 		};
 		B59D76D8256F6B4400B1389F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3378094713481F369C294396 /* Pods-Demo002.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -276,6 +328,7 @@
 		};
 		B59D76D9256F6B4400B1389F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 131CB09E595C7767F51283EE /* Pods-Demo002.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
